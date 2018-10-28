@@ -20,7 +20,7 @@ class String
     if self.include?("?") || self.include?(".") || self.include?("!")
           marks.each {|mark| sentences << self.split(mark)}
             sentences.delete_if {|string| string == " "}
-          end
+          
     end
     if sentences == []
       return 0 
